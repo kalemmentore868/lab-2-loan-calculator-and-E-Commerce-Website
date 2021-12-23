@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Loan Calculator</title>
+</head>
+<body>
+    <h1>Simple Loan Calculator</h1>
+    <hr>
+    <p>The Simple Loan Calculator will determine your estimated payments for different loan amounts, interest rates and terms</p>
+    
+    <div class="loan-box">
+        <h2>Simple Loan Calculator</h2>
+        <div>
+            <span>1</span>
+            <label for="loan-amount">Loan Amount</label>
+            <input type="text" name="loan-amount">
+            <hr>
+        </div>
+        <div>
+            <span>2</span>
+            <label for="years">Number of Years</label>
+            <input type="text" name="years">
+            <hr>
+        </div>
+        <div>
+            <span>3</span>
+            <label for="interest">Annual Interest</label>
+            <input type="text" name="interest" value="5%" readonly>
+            <hr>
+        </div>
+      
+        <button>Calculate</button>
+    </div>
+    <div class="modal hide">
+        <div class="modal-content"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>E COmmerce Checkout</title>
+</head>
+<body>
+    <h1>E-commerce Website</h1>
+
+    <div class="checkout">
+        <div>
+            <h2>Product</h2>
+            <span>Pants</span>
+            <span>Shirt</span>
+        </div>
+        <div>
+            <h2>Quantity</h2>
+            <div id="pants-quantity"><button>-</button> <span>0</span> <button>+</button></div>
+            <div id="shirt-quantity"><button>-</button> <span>0</span> <button>+</button></div>
+        </div>
+        <div>
+            <h2>Unit Price</h2>
+            <span>$40.99</span>
+            <span>$10.99</span>
+        </div>
+        <div>
+            <h2>Extended Price</h2>
+            <span id="pants-price">$0</span>
+            <span id="shirt-price">$0</span>
+        </div>
+    </div>
+
+    <button id="calculate">Calculate</button>
+
+    <div class="result">Subtotal:</div>
+    <div class="result">Tax:</div>
+    <div class="result">Total:</div>
+    
+    <div>Have a promo code? <button id="promo-code">Click to Enter</button></div>
+
+    <div class="modal hide">
+        <div class="modal-content">
+            <input type="text" name="code" placeholder="enter your code here">
+            <button id="enter-code">enter</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
